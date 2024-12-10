@@ -1,4 +1,5 @@
 #include "board.h"
+#include "renderer.h"
 
 board* buffer_board;
 
