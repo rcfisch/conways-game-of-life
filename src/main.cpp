@@ -3,7 +3,7 @@
 #include <unistd.h>
 
 const int width = 32;
-const int height = 32;
+const int height = 26;
 
 const char empty_tile = '.';
 const char full_tile = '#';
@@ -15,36 +15,38 @@ void draw_frame();
 void update_buffer();
 
 int main(){
-  board = (bool*)malloc((width *height)*sizeof(bool));
-  buffer = (bool*)malloc((width *height)*sizeof(bool));
+  board = (bool*)malloc((width * height)*sizeof(bool));
+  buffer = (bool*)malloc((width * height)*sizeof(bool));
 
-  //board[0] = true;
-  //board[1] = true;
-  //board[width] = true;
-  //board[width + 1] = true;
+  board[831] = true;
+  board[830] = true;
+  board[829] = true;
+  board[828] = true;
   
-  std::cout << " ";
-  while (true){ 
+  //std::cout << " ";
+  draw_frame();
+  /*while (true){ 
     update_buffer();
     for (int i = 0; i < width * height; i++){
       board[i] = buffer[i];
       buffer[i] = false;
     }  
-    draw_frame();
     usleep(500000);
-  }
+  }*/
   return 0;
 }
 
 // Draws an update of the buffer to the terminal.
 void draw_frame(){
   system("clear");
-  for (int y = 0; y < height; y++){
-    for (int x = 0; x < width; x++){
-      if (board[y * height + x]){
-        std::cout << ' ' + full_tile;
+  for (int x = 0; x < width; x++){
+    for (int y = 0; y < height; y++){
+      if (board[x*width + y]){
+        std::cout << " ";
+        std::cout << full_tile;
       } else{
-        std::cout << ' ' + empty_tile;
+        std::cout << " ";
+        std::cout << empty_tile;
       }
     }
     std::cout << std::endl;
