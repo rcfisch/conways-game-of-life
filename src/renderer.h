@@ -1,10 +1,15 @@
-#ifndef RENDERER
-#define RENDERER
+#pragma once
+#include <iostream>
 
-#include "board.h"
-
-void render_to_buffer(board* game_board);
-
-void display_buffer();
-
-#endif
+class renderer{
+public: 
+  renderer(int _width, int _height, bool* _board);
+public:
+  void draw_frame();
+private:
+  int width;
+private:
+  int height;
+private:
+  bool* board;
+};

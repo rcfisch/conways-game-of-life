@@ -1,0 +1,4 @@
+/home/roland/Documents/Repositories/conways-game-of-life/CMakeFiles/renderer.dir
+/home/roland/Documents/Repositories/conways-game-of-life/CMakeFiles/main.dir
+/home/roland/Documents/Repositories/conways-game-of-life/CMakeFiles/edit_cache.dir
+/home/roland/Documents/Repositories/conways-game-of-life/CMakeFiles/rebuild_cache.dir

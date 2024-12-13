@@ -1,30 +1,38 @@
 #include <cstdlib>
-#include <iostream>
 #include <unistd.h>
+#include "renderer.h"
 
 const int width = 32;
-const int height = 26;
-
-const char empty_tile = '.';
-const char full_tile = '#';
+const int height = 32;
 
 bool* board;
 bool* buffer;
+
+renderer* renderer;
 
 void draw_frame();
 void update_buffer();
 
 int main(){
   board = (bool*)malloc((width * height)*sizeof(bool));
-  buffer = (bool*)malloc((width * height)*sizeof(bool));
+  buffer = (bool*)malloc((width * height)*sizeof(bool)); 
+  
+  renderer = new class::renderer(width, height, board);
+  
 
-  board[831] = true;
+  board[0] = true;
+  board[1] = true;
+  board[height] = true;
+  board[height + 1] = true;
+  board[600] = true;
+
+  /*board[831] = true;
   board[830] = true;
   board[829] = true;
-  board[828] = true;
+  board[828] = true;*/
   
   //std::cout << " ";
-  draw_frame();
+  renderer->draw_frame();
   /*while (true){ 
     update_buffer();
     for (int i = 0; i < width * height; i++){
@@ -34,23 +42,6 @@ int main(){
     usleep(500000);
   }*/
   return 0;
-}
-
-// Draws an update of the buffer to the terminal.
-void draw_frame(){
-  system("clear");
-  for (int x = 0; x < width; x++){
-    for (int y = 0; y < height; y++){
-      if (board[x*width + y]){
-        std::cout << " ";
-        std::cout << full_tile;
-      } else{
-        std::cout << " ";
-        std::cout << empty_tile;
-      }
-    }
-    std::cout << std::endl;
-  }
 }
 
 // Writes a new tick of data to the buffer.
