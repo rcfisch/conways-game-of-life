@@ -3,7 +3,7 @@
 
 class renderer{
 public: 
-  renderer(int _width, int _height, bool* _board);
+  renderer(int _width, int _height, bool* _board, char full_tile, char emtpy_tile);
 public:
   void draw_frame();
 private:
@@ -12,4 +12,8 @@ private:
   int height;
 private:
   bool* board;
+private:
+  char full_tile;
+private:
+  char empty_tile;
 };

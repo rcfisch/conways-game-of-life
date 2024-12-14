@@ -6,10 +6,12 @@ const char full_tile = '#';
 /*int width;
 int height;
 bool* board;*/
-renderer::renderer(int _width, int _height, bool* _board){
+renderer::renderer(int _width, int _height, bool* _board, char _full_tile, char _empty_tile){
   width = _width;
   height = _height;
   board = _board;
+  full_tile = _full_tile;
+  empty_tile = _empty_tile;
 }
 
 void renderer::draw_frame(){
