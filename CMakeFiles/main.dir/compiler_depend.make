@@ -4,9 +4,17 @@
 CMakeFiles/main.dir/main.cpp.o: /home/roland/Documents/Repositories/conways-game-of-life/src/main.cpp \
   /home/roland/Documents/Repositories/conways-game-of-life/src/renderer.h \
   /usr/include/alloca.h \
+  /usr/include/asm-generic/bitsperlong.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
+  /usr/include/asm-generic/int-ll64.h \
+  /usr/include/asm-generic/posix_types.h \
+  /usr/include/asm-generic/types.h \
+  /usr/include/asm/bitsperlong.h \
   /usr/include/asm/errno.h \
+  /usr/include/asm/posix_types.h \
+  /usr/include/asm/posix_types_64.h \
+  /usr/include/asm/types.h \
   /usr/include/bits/atomic_wide_counter.h \
   /usr/include/bits/byteswap.h \
   /usr/include/bits/confname.h \
@@ -30,6 +38,8 @@ CMakeFiles/main.dir/main.cpp.o: /home/roland/Documents/Repositories/conways-game
   /usr/include/bits/select.h \
   /usr/include/bits/setjmp.h \
   /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdint-least.h \
+  /usr/include/bits/stdint-uintn.h \
   /usr/include/bits/stdio_lim.h \
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
@@ -174,6 +184,7 @@ CMakeFiles/main.dir/main.cpp.o: /home/roland/Documents/Repositories/conways-game
   /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/gthr.h \
   /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/os_defines.h \
   /usr/include/ctype.h \
+  /usr/include/curses.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
   /usr/include/features-time64.h \
@@ -182,10 +193,16 @@ CMakeFiles/main.dir/main.cpp.o: /home/roland/Documents/Repositories/conways-game
   /usr/include/gnu/stubs.h \
   /usr/include/linux/close_range.h \
   /usr/include/linux/errno.h \
+  /usr/include/linux/posix_types.h \
+  /usr/include/linux/sched/types.h \
+  /usr/include/linux/stddef.h \
+  /usr/include/linux/types.h \
   /usr/include/locale.h \
+  /usr/include/ncurses_dll.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
   /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
   /usr/include/stdio.h \
   /usr/include/stdlib.h \
   /usr/include/sys/cdefs.h \
@@ -193,23 +210,53 @@ CMakeFiles/main.dir/main.cpp.o: /home/roland/Documents/Repositories/conways-game
   /usr/include/sys/single_threaded.h \
   /usr/include/sys/types.h \
   /usr/include/time.h \
+  /usr/include/unctrl.h \
   /usr/include/unistd.h \
   /usr/include/wchar.h \
   /usr/include/wctype.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdarg.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stddef.h
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stddef.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdint.h
 
-bin/main: /usr/lib/libc.so \
+bin/main: /usr/lib/Scrt1.o \
+  /usr/lib/crti.o \
+  /usr/lib/crtn.o \
+  /usr/lib/libc.so \
   /usr/lib/libgcc_s.so \
+  /usr/lib/libgcc_s.so.1 \
   /usr/lib/libm.so \
-  /usr/lib/ld-linux-x86-64.so.2
+  /usr/lib/libstdc++.so \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/crtbeginS.o \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/crtendS.o \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/libgcc.a \
+  /usr/lib/ld-linux-x86-64.so.2 \
+  /usr/lib/libc.so.6 \
+  /usr/lib/libc_nonshared.a \
+  /usr/lib/libm.so.6 \
+  /usr/lib/libmvec.so.1 \
+  CMakeFiles/main.dir/main.cpp.o \
+  bin/lib/librenderer.a
 
+
+/usr/lib/libc_nonshared.a:
+
+/usr/lib/libc.so.6:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/libgcc.a:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/crtendS.o:
 
 /usr/lib/libm.so:
 
 /usr/lib/libc.so:
 
+/usr/lib/crtn.o:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdint.h:
+
 /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdarg.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/crtbeginS.o:
 
 /usr/include/wchar.h:
 
@@ -225,17 +272,27 @@ bin/main: /usr/lib/libc.so \
 
 /usr/include/stdio.h:
 
-/usr/include/stdc-predef.h:
+/usr/include/stdint.h:
 
 /usr/include/sched.h:
 
+CMakeFiles/main.dir/main.cpp.o:
+
 /usr/include/locale.h:
+
+/usr/include/linux/types.h:
+
+/usr/include/linux/stddef.h:
+
+/usr/include/linux/sched/types.h:
 
 /usr/include/gnu/stubs-64.h:
 
 /usr/include/errno.h:
 
 /usr/include/endian.h:
+
+/usr/include/curses.h:
 
 /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/gthr-default.h:
 
@@ -244,6 +301,8 @@ bin/main: /usr/lib/libc.so \
 /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h:
 
 /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/c++locale.h:
+
+/usr/lib/libstdc++.so:
 
 /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/c++config.h:
 
@@ -264,8 +323,6 @@ bin/main: /usr/lib/libc.so \
 /usr/include/c++/14.2.1/iosfwd:
 
 /usr/include/c++/14.2.1/ios:
-
-/usr/include/c++/14.2.1/ext/type_traits.h:
 
 /usr/include/c++/14.2.1/ext/numeric_traits.h:
 
@@ -293,41 +350,33 @@ bin/main: /usr/lib/libc.so \
 
 /usr/include/c++/14.2.1/cctype:
 
-/usr/include/bits/types/struct_timespec.h:
+/usr/include/c++/14.2.1/bits/utility.h:
 
-/usr/include/c++/14.2.1/bits/refwrap.h:
+/usr/include/c++/14.2.1/bits/stringfwd.h:
 
-/usr/include/bits/types/struct_sched_param.h:
+/usr/include/c++/14.2.1/bits/string_view.tcc:
 
-/usr/include/ctype.h:
+/usr/include/c++/14.2.1/bits/streambuf_iterator.h:
 
-/usr/include/bits/waitflags.h:
+/usr/include/c++/14.2.1/bits/streambuf.tcc:
 
-/usr/include/c++/14.2.1/initializer_list:
+/usr/include/c++/14.2.1/bits/stl_pair.h:
 
-/usr/include/bits/types/struct_FILE.h:
+/usr/lib/libm.so.6:
 
-/usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h:
-
-/usr/include/bits/types/locale_t.h:
-
-/usr/include/bits/types/cookie_io_functions_t.h:
-
-/usr/include/bits/sched.h:
-
-/usr/include/c++/14.2.1/bits/ios_base.h:
+/usr/include/c++/14.2.1/bits/stl_iterator_base_types.h:
 
 /usr/include/c++/14.2.1/string_view:
 
 /usr/include/bits/types/clockid_t.h:
-
-/usr/include/c++/14.2.1/bits/streambuf.tcc:
 
 /usr/include/bits/types/__locale_t.h:
 
 /usr/include/c++/14.2.1/ext/atomicity.h:
 
 /usr/include/bits/types/__FILE.h:
+
+/usr/include/linux/posix_types.h:
 
 /usr/include/c++/14.2.1/bits/charconv.h:
 
@@ -347,55 +396,15 @@ bin/main: /usr/lib/libc.so \
 
 /usr/include/bits/types/time_t.h:
 
-/usr/include/bits/types/sigset_t.h:
-
-/usr/include/c++/14.2.1/bits/ostream.tcc:
-
 /usr/include/bits/types/struct_timeval.h:
 
-/usr/include/features.h:
+/usr/include/bits/stdint-uintn.h:
 
-/usr/include/bits/endianness.h:
+/usr/include/bits/sched.h:
 
-/usr/include/bits/struct_mutex.h:
+/usr/include/bits/types/cookie_io_functions_t.h:
 
-/usr/include/bits/cpu-set.h:
-
-/usr/include/bits/typesizes.h:
-
-/usr/include/c++/14.2.1/bits/functexcept.h:
-
-/usr/include/bits/long-double.h:
-
-/usr/include/bits/stdlib-float.h:
-
-/usr/include/bits/time64.h:
-
-/usr/include/c++/14.2.1/bits/basic_ios.tcc:
-
-/usr/include/c++/14.2.1/bits/postypes.h:
-
-/usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/os_defines.h:
-
-/usr/include/bits/byteswap.h:
-
-/usr/include/bits/struct_rwlock.h:
-
-/usr/include/bits/types/struct_itimerspec.h:
-
-/usr/include/bits/types/__sigset_t.h:
-
-/usr/include/c++/14.2.1/bits/allocator.h:
-
-/usr/include/c++/14.2.1/concepts:
-
-/usr/include/bits/endian.h:
-
-/usr/include/alloca.h:
-
-/usr/include/c++/14.2.1/new:
-
-/usr/include/bits/types/error_t.h:
+/usr/include/c++/14.2.1/bits/ios_base.h:
 
 /usr/include/linux/close_range.h:
 
@@ -403,27 +412,115 @@ bin/main: /usr/lib/libc.so \
 
 /usr/include/bits/stdint-intn.h:
 
+/usr/include/c++/14.2.1/new:
+
+/usr/include/bits/types/error_t.h:
+
+/usr/include/bits/setjmp.h:
+
+/usr/include/bits/types/struct___jmp_buf_tag.h:
+
+/usr/include/bits/types/__fpos64_t.h:
+
+/usr/include/c++/14.2.1/bits/uses_allocator_args.h:
+
+/usr/include/bits/select.h:
+
+/usr/lib/libgcc_s.so:
+
+/usr/include/c++/14.2.1/bits/alloc_traits.h:
+
+/usr/include/unctrl.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/bits/pthreadtypes-arch.h:
+
+/usr/include/bits/pthread_stack_min-dynamic.h:
+
+/usr/include/c++/14.2.1/bits/locale_classes.tcc:
+
+/usr/include/c++/14.2.1/concepts:
+
+/usr/include/bits/endian.h:
+
 /usr/include/bits/atomic_wide_counter.h:
 
 /usr/include/bits/posix_opt.h:
 
-/usr/include/bits/types/struct___jmp_buf_tag.h:
+/usr/include/asm/posix_types.h:
 
-/usr/include/bits/setjmp.h:
+/usr/include/asm/posix_types_64.h:
 
-/usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/error_constants.h:
+/usr/include/c++/14.2.1/bits/basic_ios.tcc:
 
-/usr/include/bits/types/clock_t.h:
+/usr/include/c++/14.2.1/bits/postypes.h:
 
-/usr/include/bits/types/__fpos_t.h:
+/usr/include/asm-generic/int-ll64.h:
 
-/home/roland/Documents/Repositories/conways-game-of-life/src/main.cpp:
+/usr/include/asm/bitsperlong.h:
 
-/usr/include/asm-generic/errno.h:
+/usr/include/c++/14.2.1/bits/nested_exception.h:
+
+/usr/include/sys/single_threaded.h:
+
+/usr/include/c++/14.2.1/bits/new_allocator.h:
+
+/usr/include/asm-generic/types.h:
 
 /usr/include/asm-generic/errno-base.h:
 
 /usr/include/c++/14.2.1/backward/binders.h:
+
+/usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/error_constants.h:
+
+/usr/include/bits/types/__fpos_t.h:
+
+/usr/include/bits/types/clock_t.h:
+
+/usr/include/c++/14.2.1/bits/functional_hash.h:
+
+/usr/include/bits/stdint-least.h:
+
+/home/roland/Documents/Repositories/conways-game-of-life/src/renderer.h:
+
+/usr/include/alloca.h:
+
+/usr/include/c++/14.2.1/ext/type_traits.h:
+
+/usr/include/asm/types.h:
+
+/usr/include/c++/14.2.1/initializer_list:
+
+/usr/include/bits/types/struct_FILE.h:
+
+/usr/include/bits/types/__sigset_t.h:
+
+/usr/include/stdc-predef.h:
+
+/usr/include/asm-generic/posix_types.h:
+
+/usr/include/c++/14.2.1/bits/allocator.h:
+
+/usr/include/bits/floatn-common.h:
+
+/usr/include/asm-generic/errno.h:
+
+/home/roland/Documents/Repositories/conways-game-of-life/src/main.cpp:
+
+/usr/include/features.h:
+
+/usr/include/bits/endianness.h:
+
+/usr/include/bits/stdlib-float.h:
+
+/usr/include/bits/time64.h:
+
+/usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/os_defines.h:
+
+/usr/include/bits/byteswap.h:
+
+/usr/lib/libgcc_s.so.1:
 
 /usr/include/c++/14.2.1/typeinfo:
 
@@ -431,53 +528,79 @@ bin/main: /usr/lib/libc.so \
 
 /usr/include/bits/confname.h:
 
+/usr/include/bits/struct_mutex.h:
+
+/usr/include/ncurses_dll.h:
+
+/usr/include/bits/cpu-set.h:
+
+/usr/lib/crti.o:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/c++/14.2.1/bits/functexcept.h:
+
+/usr/include/bits/long-double.h:
+
 /usr/include/bits/environments.h:
 
-/home/roland/Documents/Repositories/conways-game-of-life/src/renderer.h:
+/usr/include/bits/locale.h:
+
+/usr/include/wctype.h:
+
+/usr/include/bits/timex.h:
+
+/usr/include/bits/errno.h:
+
+/usr/include/bits/thread-shared-types.h:
+
+/usr/include/c++/14.2.1/bits/uses_allocator.h:
+
+/usr/include/bits/getopt_posix.h:
+
+/usr/include/bits/libc-header-start.h:
+
+/usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h:
+
+/usr/include/bits/types/locale_t.h:
+
+bin/lib/librenderer.a:
+
+/usr/include/c++/14.2.1/bits/stl_construct.h:
+
+/usr/include/c++/14.2.1/bits/cxxabi_forced.h:
 
 /usr/include/c++/14.2.1/bits/version.h:
 
 /usr/include/bits/types/mbstate_t.h:
 
-/usr/include/bits/floatn-common.h:
+/usr/include/bits/types/sigset_t.h:
 
-/usr/include/bits/locale.h:
+/usr/include/c++/14.2.1/bits/ostream.tcc:
 
-/usr/include/c++/14.2.1/bits/stl_pair.h:
+/usr/include/bits/struct_rwlock.h:
 
-/usr/include/bits/thread-shared-types.h:
+/usr/include/bits/types/struct_itimerspec.h:
 
-/usr/include/bits/libc-header-start.h:
+/usr/include/bits/types/struct_sched_param.h:
 
-/usr/include/wctype.h:
+/usr/include/ctype.h:
 
-/usr/include/bits/errno.h:
+/usr/include/bits/waitflags.h:
 
-/usr/include/bits/timex.h:
+/usr/include/bits/types/struct_timespec.h:
 
-/usr/include/bits/pthread_stack_min-dynamic.h:
-
-/usr/include/c++/14.2.1/bits/locale_classes.tcc:
-
-/usr/include/c++/14.2.1/bits/cxxabi_forced.h:
-
-/usr/include/c++/14.2.1/bits/stl_construct.h:
-
-/usr/include/gnu/stubs.h:
-
-/usr/include/bits/pthreadtypes-arch.h:
-
-/usr/include/bits/types/__fpos64_t.h:
-
-/usr/lib/libgcc_s.so:
-
-/usr/include/c++/14.2.1/bits/alloc_traits.h:
+/usr/include/c++/14.2.1/bits/refwrap.h:
 
 /usr/include/bits/types/struct_tm.h:
 
 /usr/include/c++/14.2.1/bits/locale_facets.h:
 
+/usr/include/asm-generic/bitsperlong.h:
+
 /usr/include/bits/wchar.h:
+
+/usr/lib/Scrt1.o:
 
 /usr/include/c++/14.2.1/bits/localefwd.h:
 
@@ -494,10 +617,6 @@ bin/main: /usr/lib/libc.so \
 /usr/include/bits/timesize.h:
 
 /usr/include/bits/waitstatus.h:
-
-/usr/include/bits/select.h:
-
-/usr/include/c++/14.2.1/bits/uses_allocator_args.h:
 
 /usr/include/sys/types.h:
 
@@ -533,6 +652,8 @@ bin/main: /usr/lib/libc.so \
 
 /usr/include/c++/14.2.1/bits/memory_resource.h:
 
+/usr/lib/libmvec.so.1:
+
 /usr/include/c++/14.2.1/bits/cpp_type_traits.h:
 
 /usr/include/bits/floatn.h:
@@ -553,8 +674,6 @@ bin/main: /usr/lib/libc.so \
 
 /usr/include/c++/14.2.1/bits/range_access.h:
 
-/usr/include/c++/14.2.1/bits/functional_hash.h:
-
 /usr/include/c++/14.2.1/bits/hash_bytes.h:
 
 /usr/include/c++/14.2.1/bits/invoke.h:
@@ -565,19 +684,11 @@ bin/main: /usr/lib/libc.so \
 
 /usr/include/c++/14.2.1/bits/locale_facets.tcc:
 
-/usr/include/c++/14.2.1/bits/stl_iterator_base_types.h:
-
 /usr/include/linux/errno.h:
 
 /usr/include/c++/14.2.1/string:
 
 /usr/include/c++/14.2.1/bits/move.h:
-
-/usr/include/c++/14.2.1/bits/nested_exception.h:
-
-/usr/include/sys/single_threaded.h:
-
-/usr/include/c++/14.2.1/bits/new_allocator.h:
 
 /usr/include/c++/14.2.1/bits/ostream_insert.h:
 
@@ -594,15 +705,3 @@ bin/main: /usr/lib/libc.so \
 /usr/include/c++/14.2.1/bits/std_abs.h:
 
 /usr/include/c++/14.2.1/bits/stl_algobase.h:
-
-/usr/include/c++/14.2.1/bits/streambuf_iterator.h:
-
-/usr/include/c++/14.2.1/bits/string_view.tcc:
-
-/usr/include/c++/14.2.1/bits/stringfwd.h:
-
-/usr/include/bits/getopt_posix.h:
-
-/usr/include/c++/14.2.1/bits/uses_allocator.h:
-
-/usr/include/c++/14.2.1/bits/utility.h:

@@ -105,6 +105,7 @@ renderer: CMakeFiles/renderer.dir/rule
 # codegen rule for target.
 CMakeFiles/renderer.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/renderer.dir/build.make CMakeFiles/renderer.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/roland/Documents/Repositories/conways-game-of-life/CMakeFiles --progress-num=3,4 "Finished codegen for target renderer"
 .PHONY : CMakeFiles/renderer.dir/codegen
 
 # clean rule for target.
@@ -136,6 +137,7 @@ main: CMakeFiles/main.dir/rule
 # codegen rule for target.
 CMakeFiles/main.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/roland/Documents/Repositories/conways-game-of-life/CMakeFiles --progress-num=1,2 "Finished codegen for target main"
 .PHONY : CMakeFiles/main.dir/codegen
 
 # clean rule for target.

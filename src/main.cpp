@@ -7,7 +7,7 @@ const int width = 32;
 const int height = 32;
 
 const char full_tile = '#';
-const char empty_tile = ' ';
+const char empty_tile = '-';
 
 renderer* renderer;
 
@@ -18,12 +18,14 @@ int main(){
   bool buffer[width][height] = {false};
   
   renderer = new class::renderer(width, height, full_tile, empty_tile);
-
-  board[3][1] = true;
-  board[3][2] = true;
-  board[3][3] = true;
-  board[2][3] = true;
-  board[1][2] = true;
+  std::string input;
+  std::cout << "Input starting squares:" << std::endl;
+  std::cin >> input;
+  //board[3][1] = true;
+  //board[3][2] = true;
+  //board[3][3] = true;
+  //board[2][3] = true;
+  //board[1][2] = true;
   //board[16][2] = true;
 
   
@@ -58,7 +60,7 @@ int main(){
         } else if (num_of_neighbors == 3) {
           buffer[x][y] = true;
         }
-      }
+      }
     }
 
     for (int x = 0; x < width; x++){
@@ -72,4 +74,4 @@ int main(){
   return 0;
 }
 
-// Writes a new tick of data to the buffer.
+
